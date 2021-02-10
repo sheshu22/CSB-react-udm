@@ -10,8 +10,10 @@ export default function App() {
   let date = d.getFullYear();
   return (
     <div className="App">
-      <div className="div">
-        <h1>My Fav Foods</h1>
+      <div>
+        <h1 className="div" contentEditable="true" spellCheck="false">
+          My Fav Foods
+        </h1>
         <ul>
           <li>biryani</li>
           <li>biryani</li>
