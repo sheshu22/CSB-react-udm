@@ -2,12 +2,31 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
-  let number = 7,
-    name = "nani",
+  let name = "nani",
     lname = "reddy";
 
   let d = new Date();
-  let date = d.getFullYear();
+  let hour = d.getHours();
+  let x;
+
+  if (hour >= 0 && hour <= 12) {
+    x = "Good Morning";
+  } else if (hour > 12 && hour <= 6) {
+    x = "Good Afternoon";
+  } else {
+    x = "Good evening";
+  }
+
+  const h1Color = {
+    color: "red"
+  };
+
+  if (x === "Good Afternoon") {
+    h1Color.color = "green";
+  } else {
+    h1Color.color = "blue";
+  }
+
   return (
     <div className="App">
       <h1 className="div" contentEditable="true" spellCheck="false">
@@ -33,10 +52,9 @@ export default function App() {
       <h1>
         Hello {name} {lname}
       </h1>
-      <h2>Your number is {number}</h2>
-
-      <p>created by {name}</p>
-      <p>copyright {date}</p>
+      <h1 className="heading" style={h1Color}>
+        {x}
+      </h1>
     </div>
   );
 }
