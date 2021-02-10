@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import Heading from "./Heading";
 
 export default function App() {
   let name = "nani",
@@ -23,15 +24,15 @@ export default function App() {
 
   if (x === "Good Afternoon") {
     h1Color.color = "green";
+  } else if (x === "Good Morning") {
+    h1Color.color = "red";
   } else {
     h1Color.color = "blue";
   }
 
   return (
     <div className="App">
-      <h1 className="div" contentEditable="true" spellCheck="false">
-        My Fav Foods
-      </h1>
+      <Heading />
       <div>
         <img
           src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20190503-delish-pineapple-baked-salmon-horizontal-ehg-450-1557771120.jpg?crop=0.670xw:1.00xh;0.173xw,0&resize=480:*"
