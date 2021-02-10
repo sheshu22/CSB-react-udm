@@ -3,7 +3,8 @@ import "./styles.css";
 
 export default function App() {
   let number = 7,
-    name = "nani";
+    name = "nani",
+    lname = "reddy";
   return (
     <div className="App">
       <div className="div">
@@ -14,7 +15,9 @@ export default function App() {
           <li>biryani</li>
         </ul>
       </div>
-      <h1>Hello {name}</h1>
+      <h1>
+        Hello {name} {lname}
+      </h1>
       <h2>Your number is {number}</h2>
     </div>
   );
