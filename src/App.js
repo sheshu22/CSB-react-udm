@@ -5,6 +5,9 @@ export default function App() {
   let number = 7,
     name = "nani",
     lname = "reddy";
+
+  let d = new Date();
+  let date = d.getFullYear();
   return (
     <div className="App">
       <div className="div">
@@ -19,6 +22,9 @@ export default function App() {
         Hello {name} {lname}
       </h1>
       <h2>Your number is {number}</h2>
+
+      <p>created by {name}</p>
+      <p>copyright {date}</p>
     </div>
   );
 }
