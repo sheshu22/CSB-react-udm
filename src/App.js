@@ -1,18 +1,10 @@
 import React from "react";
 import "./styles.css";
 import Card from "./card";
-// import Heading from "./Heading";
-// import Images from "./Images";
-// import Wishes from "./Wishes";
-// import Math from "./math";
 
 export default function App() {
   return (
     <div className="App">
-      {/* <Heading />
-      <Images />
-      <Wishes />
-      <Math /> */}
       <h1>My Contacts</h1>
       <Card
         name="Jhonny"
@@ -26,6 +18,12 @@ export default function App() {
         img="https://media.wired.com/photos/5dd3081844aad10009406a30/1:1/w_2400,c_limit/Biz-Sundar-h_20.93146994.jpg"
         tele="6758598467"
         mail="sundar@g.com"
+      />
+      <Card
+        name="Don"
+        img="https://www.filmibeat.com/img/2021/01/xkrack-1609484922.jpg.pagespeed.ic.6kNCpE2rRF.jpg"
+        tele="8753713467"
+        mail="kracK@g.com"
       />
     </div>
   );

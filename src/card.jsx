@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card(props) {
   return (
-    <div>
+    <div className="card">
       <h2>{props.name}</h2>
       <img src={props.img} alt={props.alt} />
       <p>{props.tele}</p>
